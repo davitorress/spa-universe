@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	font-size: 62.5%;
+	font-weight: 400;
+	font-family: "Roboto", sans-serif;
+}
+
+a,
+body {
+	color: #fff;
+	text-decoration: none;
+}
+
+header {
+	top: 0;
+	left: 0;
+	right: 0;
+	position: absolute;
+
+	padding: 4rem 7.2rem;
+
+	display: flex;
+	align-items: center;
+	gap: 3.5rem;
+}
+
+header .logo {
+	width: 4.8rem;
+}
+
+header nav ul {
+	display: flex;
+	gap: 3.2rem;
+}
+
+header nav ul li {
+	list-style: none;
+}
+
+header nav ul li a {
+	font-size: 2rem;
+	line-height: 2.2rem;
+}
+
+header nav ul li a.active,
+header nav ul li a:hover {
+	font-weight: 700;
+}
+
+main {
+	width: 100%;
+	height: 100vh;
+
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	background-image: url(/src/assets/home.png);
+}
+
+main h1,
+main p {
+	color: #e1e1e6;
+}
+
+main h1 {
+	font-size: 4.8rem;
+	line-height: 6rem;
+}
+
+main p {
+	font-size: 1.8rem;
+	line-height: 2.8rem;
+}
+
+main .button {
+	padding: 1.2rem 3.2rem;
+
+	color: #fff;
+	font-weight: 700;
+	font-size: 1.4rem;
+	line-height: 2.4rem;
+	text-transform: uppercase;
+
+	cursor: pointer;
+	transition: all 0.3s ease-in;
+
+	border-radius: 0.5rem;
+	border: 2px solid #fff;
+	background-color: transparent;
+}
+
+main .button:hover {
+	color: #02799d;
+	background-color: #fff;
+}
+
+.container {
+	height: 100%;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	gap: 2.4rem;
+}
+
+.content {
+	height: 100%;
+
+	padding-left: 10rem;
+
+	display: grid;
+	align-content: center;
+	gap: 1.6rem;
+}
+
+.content p {
+	max-width: 64rem;
+}
